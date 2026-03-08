@@ -1,14 +1,15 @@
-# Telephone-7940s
+# Telephone-1940s
 pinout from https://pinout.xyz
 
 # hardware
+grandfathers telephone from 1940 - 
 ringer module silvertel 1171
 raspberry pi 2011 old b model
 
 # techstack
 import RPi.GPIO as GPIO
 import time
-import pygame.mixer
+import pygame.mixer for playing the wav/mp3
 import os
 import threading
 
