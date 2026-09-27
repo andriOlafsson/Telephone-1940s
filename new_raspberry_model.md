@@ -73,3 +73,7 @@ ctl.!default {
     type hw
     card Headphones
 }
+---
+need to change the default volume setting (it is default at 40% so need to write alsamixer in the terminal to change the volume to 100%
+
+Also noticing weird behaviour from the jack connector, it's noisy/screeching when nothing is playing, it was the same on the 2011 model of the raspberry pi. Squeeky noise coming and stopped for a moment when changing volume. Soe electrical inference 
