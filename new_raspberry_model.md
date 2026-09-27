@@ -53,3 +53,23 @@ Once the files are copied over, test-run the script on the Pi:
 python3 /home/andri/tele/telephone.py
 
 ```
+
+---
+needed to create "nano ~/.asoundrc" file in home directory to make the default audio device as the jack connector. Otherwise the default was alawys the hdmi even though nothing was plugged in. Stupid :)
+content of asoundrc : 
+pcm.!default {
+    type asym
+    playback.pcm {
+        type plug
+        slave.pcm "hw:Headphones,0"
+    }
+    capture.pcm {
+        type plug
+        slave.pcm "hw:Headphones,0"
+    }
+}
+
+ctl.!default {
+    type hw
+    card Headphones
+}
