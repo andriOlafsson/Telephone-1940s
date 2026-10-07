@@ -18,7 +18,7 @@ FR_PIN = 22  # Forward/Reverse (Toggled for AC signal)
 
 # Audio Settings
 SOUND_FILE = "/home/andri/tele/valgerdur.wav"
-SOUND_DELAY = 1.0  # Time for user to put phone to ear
+SOUND_DELAY = 0.5  # Time for user to put phone to ear
 
 # === GLOBAL VARIABLES ===
 ringing_thread = None
