@@ -63,3 +63,9 @@ The repository does not include a systemd service or a known-good OS image. The 
 - [`new_raspberry_model.md`](new_raspberry_model.md) — notes from a later Raspberry Pi deployment.
 - [`Ag1171-datasheet-Low-cost-ringing-SLIC-with-single-supply.pdf`](Ag1171-datasheet-Low-cost-ringing-SLIC-with-single-supply.pdf) — AG1171 datasheet.
 - [`batterybox.3mf`](batterybox.3mf) and [`battery_label.jpg`](battery_label.jpg) — supporting enclosure and label assets.
+
+## Development history
+
+The first prototype used an Arduino and an MP3 module. I scrapped that code and moved the project to a Raspberry Pi so I could use Python for the GPIO and audio playback. The original build used a 2011 Raspberry Pi Model B, Revision 1; I later adapted the program for a Raspberry Pi 4.
+
+The current script uses BCM GPIO assignments 17 (hook switch), 26 (magneto switch), 27 (AG1171 RM), and 22 (AG1171 FR). These are BCM GPIO numbers, not physical header-pin numbers. I still need to verify and document the Pi 4's physical wiring; see [issue #2](https://github.com/andriOlafsson/Telephone-1940s/issues/2).
